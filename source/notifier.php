@@ -18,4 +18,9 @@ class notifier
 	{
 		$this->notifications [ ] = $notification;
 	}
+
+	public function flush ( )
+	{
+		$this->notifications = [ ];
+	}
 }
