@@ -13,9 +13,4 @@ abstract class notification
 	{
 		return $this->message;
 	}
-
-	public function stating ( string $status )
-	{
-		$this->status = $status;
-	}
 }
