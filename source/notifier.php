@@ -4,6 +4,8 @@ namespace agreed;
 
 class notifier
 {
+	use \accessible;
+	
 	private $notifications = [ ];
 
 	public function __construct ( array $notifications = [ ] )
