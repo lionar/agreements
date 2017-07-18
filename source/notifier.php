@@ -2,13 +2,18 @@
 
 namespace agreed;
 
-interface notifier
+class notifier
 {
-	public function success ( notification $notification );
+	private $notifications = [ ];
 
-	public function notice ( notification $notification );
+	public function __construct ( array $notifications = [ ] )
+	{
+		foreach ( $notifications as $notification )
+			$this->add ( $notification );
+	}
 
-	public function warning ( notification $notification );
-
-	public function error ( notification $notification );
+	public function add ( notification $notification )
+	{
+		$this->notifications [ ] = $notification;
+	}
 }
