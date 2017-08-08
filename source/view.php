@@ -4,5 +4,5 @@ namespace agreed;
 
 interface view
 {
-	public function make ( string $template, array $data = [ ] ) : string;
+	public function make ( string $template, array $payload = [ ] ) : string;
 }

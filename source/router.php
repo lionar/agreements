@@ -2,11 +2,11 @@
 
 namespace agreed;
 
-use Closure as closure;
+use closure;
 
 interface router
 {
-	public function get ( string $uri, closure $action );
+	public function add ( string $key, closure $task );
 
-	public function post ( string $uri, closure $action );
+	public function match ( string $key ) : closure;
 }
