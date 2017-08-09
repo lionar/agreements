@@ -4,5 +4,5 @@ namespace agreed;
 
 interface input
 {
-	public function all ( ) : array
+	public function all ( ) : array;
 }
